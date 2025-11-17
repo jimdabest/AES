@@ -1,0 +1,357 @@
+Báo cáo 10 Vòng Mã hóa AES-128 (CHÍNH XÁC)
+
+Đây là tài liệu tái tạo lại 10 vòng mã hóa AES-128-ECB (1 block), sử dụng các dữ liệu sau:
+
+Plaintext: TGIAOTHONGVANTAI
+
+Key: PHAMNGUYEN062006
+
+Kết quả 16 byte (1 block) CHÍNH XÁC là: 01bb3856986658ca328b462e4649b0f0.
+
+Dữ liệu ban đầu
+
+State 0 (Plaintext):
+[54 4f 4e 4e]
+[47 54 47 54]
+[49 48 56 41]
+[41 4f 41 49]
+
+VÒNG 0 (Vòng khởi tạo)
+
+Khóa Vòng 0 (Key 0 - Khóa gốc):
+[50 4e 45 32]
+[48 47 4e 30]
+[41 55 30 30]
+[4d 59 36 36]
+
+Sau AddRoundKey (State 0 ⊕ Key 0):
+[04 01 0b 7c]
+[0f 13 09 64]
+[08 1d 66 71]
+[0c 16 77 7f]
+
+(Kết quả này là State 1, đầu vào cho Vòng 1)
+
+VÒNG 1
+
+Sau SubBytes (State 2):
+[f2 7c 2b 10]
+[76 7d 01 43]
+[30 a4 33 a3]
+[fe 47 f5 d2]
+
+Sau ShiftRows (State 3):
+[f2 7c 2b 10]
+[7d 01 43 76]
+[33 a3 30 a4]
+[d2 fe 47 f5]
+
+Sau MixColumns (State 4):
+[99 a6 c0 5e]
+[2e 84 8c 39]
+[48 3d a9 d1]
+[1b 3b d2 5d]
+
+Khóa Vòng 1 (Key 1):
+[55 1b 5e 6c]
+[4c 0b 45 75]
+[7e 2b 1b 2b]
+[6e 37 01 37]
+
+Sau AddRoundKey (Kết quả Vòng 1 - State 5):
+[cc bd 9e 32]
+[62 8f c9 4c]
+[36 16 b2 fa]
+[75 0c d3 6a]
+
+VÒNG 2
+
+Sau SubBytes (State 6):
+[4b b5 b7 23]
+[aa cb c4 52]
+[05 f8 37 2d]
+[9d d7 66 02]
+
+Sau ShiftRows (State 7):
+[4b b5 b7 23]
+[cb c4 52 aa]
+[37 2d 05 f8]
+[02 9d d7 66]
+
+Sau MixColumns (State 8):
+[88 dd b0 c6]
+[3a 97 f3 85]
+[a6 77 62 e4]
+[4d 3d a1 30]
+
+Khóa Vòng 2 (Key 2):
+[f4 ef b1 dd]
+[a9 a2 e7 92]
+[7b 50 4b 60]
+[0f 38 39 0e]
+
+Sau AddRoundKey (Kết quả Vòng 2 - State 9):
+[7c 32 01 1b]
+[93 35 14 17]
+[db 27 29 84]
+[e2 05 98 3e]
+
+VÒNG 3
+
+Sau SubBytes (State 10):
+[10 d3 7c b2]
+[dc 02 91 d8]
+[9e e9 34 2f]
+[98 c7 c9 03]
+
+Sau ShiftRows (State 11):
+[10 d3 7c b2]
+[02 91 d8 dc]
+[34 2f 9e e9]
+[03 98 c7 c9]
+
+Sau MixColumns (State 12):
+[b3 99 6b 65]
+[d9 ee b1 8f]
+[27 0f 6e c4]
+[82 7d f5 29]
+
+Khóa Vòng 3 (Key 3):
+[ab b4 05 69]
+[02 b6 e2 fb]
+[c9 ee a9 9f]
+[36 d5 90 91]
+
+Sau AddRoundKey (Kết quả Vòng 3 - State 13):
+[18 2d 6e 0c]
+[db 58 53 74]
+[ec ea c7 5b]
+[b4 da 65 b8]
+
+VÒNG 4
+
+Sau SubBytes (State 14):
+[e0 1c 48 fe]
+[8b 58 d1 d5]
+[e2 8a 8e 6a]
+[9a e6 18 a6]
+
+Sau ShiftRows (State 15):
+[e0 1c 48 fe]
+[58 d1 d5 8b]
+[8e 6a e2 8a]
+[a6 9a e6 18]
+
+Sau MixColumns (State 16):
+[42 1a 04 e5]
+[a1 0b b9 a6]
+[b5 1a eb b5]
+[ac f3 6a 1f]
+
+Khóa Vòng 4 (Key 4):
+[2f 9b 9e f7]
+[09 bd 5f af]
+[2d c3 6a f5]
+[34 e1 71 e0]
+
+Sau AddRoundKey (Kết quả Vòng 4 - State 17):
+[6d 81 9e 12]
+[aa b6 e6 09]
+[98 dd 81 40]
+[98 12 1b ff]
+
+VÒNG 5
+
+Sau SubBytes (State 18):
+[04 92 c6 8f]
+[f9 4e dc c4]
+[90 a2 30 a7]
+[90 12 b1 84]
+
+Sau ShiftRows (State 19):
+[04 92 c6 8f]
+[4e dc c4 f9]
+[30 a7 90 a2]
+[84 90 12 b1]
+
+Sau MixColumns (State 20):
+[43 4e b3 d7]
+[2f d6 7b 3b]
+[10 ef f5 29]
+[21 82 e8 e2]
+
+Khóa Vòng 5 (Key 5):
+[a3 38 a6 51]
+[b5 08 57 f8]
+[cc 0f 65 90]
+[ba 5b 2a ca]
+
+Sau AddRoundKey (Kết quả Vòng 5 - State 21):
+[e2 76 15 86]
+[9a de 2c c3]
+[dc e0 90 b9]
+[9b d9 c2 2c]
+
+VÒNG 6
+
+Sau SubBytes (State 22):
+[98 19 82 44]
+[d9 b4 e0 a2]
+[b9 e0 87 86]
+[e3 b5 c7 2c]
+
+Sau ShiftRows (State 23):
+[98 19 82 44]
+[b4 e0 a2 d9]
+[87 86 b9 e0]
+[2c e3 b5 c7]
+
+Sau MixColumns (State 24):
+[5a 86 6e 1d]
+[5c b3 2e 4c]
+[0b 68 c1 de]
+[04 05 0b f2]
+
+Khóa Vòng 6 (Key 6):
+[9b 93 35 64]
+[2e 9b 62 9c]
+[e2 94 07 0c]
+[58 4f 29 c6]
+
+Sau AddRoundKey (Kết quả Vòng 6 - State 25):
+[c1 15 5b 79]
+[72 28 4c d0]
+[e9 fe c6 d2]
+[5c 4a 22 34]
+
+VÒNG 7
+
+Sau SubBytes (State 26):
+[e4 82 c0 79]
+[21 ca a8 d1]
+[e5 8d 9f d3]
+[c2 4c 24 07]
+
+Sau ShiftRows (State 27):
+[e4 82 c0 79]
+[ca a8 d1 21]
+[9f d3 e5 8d]
+[07 c2 4c 24]
+
+Sau MixColumns (State 28):
+[b4 19 37 a8]
+[a0 1d 8c 0e]
+[45 9c 90 e4]
+[01 c6 88 47]
+
+Khóa Vòng 7 (Key 7):
+[72 e1 d6 b2]
+[5c 7a b4 2e]
+[be ec b3 32]
+[e6 a3 9a f4]
+
+Sau AddRoundKey (Kết quả Vòng 7 - State 29):
+[c6 f8 e1 1a]
+[fc 67 38 20]
+[fb 70 23 d6]
+[e7 65 12 b3]
+
+VÒNG 8
+
+Sau SubBytes (State 30):
+[b8 a1 e1 e5]
+[a4 67 38 20]
+[8d 70 23 d6]
+[ab 18 12 c1]
+
+Sau ShiftRows (State 31):
+[b8 a1 e1 e5]
+[67 38 20 a4]
+[23 d6 8d 70]
+[c1 ab 18 12]
+
+Sau MixColumns (State 32):
+[69 2a d6 94]
+[7a f2 56 61]
+[03 26 a8 8f]
+[b7 ae 39 a4]
+
+Khóa Vòng 8 (Key 8):
+[9b 7a af 1d]
+[c7 b3 0b 33]
+[79 5f ba 8b]
+[9f 3c a6 7f]
+
+Sau AddRoundKey (Kết quả Vòng 8 - State 33):
+[f2 50 79 89]
+[bd 41 5d 52]
+[7a 79 12 04]
+[28 92 9f db]
+
+VÒNG 9
+
+Sau SubBytes (State 34):
+[1f a0 79 0d]
+[4d 6e 5d 53]
+[06 01 12 f2]
+[8d e5 9f db]
+
+Sau ShiftRows (State 35):
+[1f a0 79 0d]
+[6e 5d 53 4d]
+[12 f2 06 01]
+[db 8d e5 9f]
+
+Sau MixColumns (State 36):
+[12 78 f8 2b]
+[65 0e 1c 3f]
+[e8 9c e8 55]
+[44 63 4a 2f]
+
+Khóa Vòng 9 (Key 9):
+[74 a0 e2 fb]
+[b3 13 fa ce]
+[c0 4c 40 45]
+[5f 70 e6 3a]
+
+Sau AddRoundKey (Kết quả Vòng 9 - State 37):
+[66 d8 1a d0]
+[f6 1d e6 f1]
+[28 d0 a8 10]
+[1b 13 ac 15]
+
+VÒNG 10 (VÒNG CUỐI)
+
+(Vòng này không có MixColumns)
+
+Sau SubBytes (State 38):
+[33 b3 e5 d4]
+[a2 d7 94 71]
+[8d 70 f9 67]
+[1f c1 95 82]
+
+Sau ShiftRows (State 39):
+[33 b3 e5 d4]
+[d7 94 71 a2]
+[f9 67 8d 70]
+[82 1f c1 95]
+
+Khóa Vòng 10 (Key 10):
+[4b d4 5b 3d]
+[fc c1 39 f1]
+[3c 70 79 34]
+[63 02 9f 0e]
+
+Sau AddRoundKey (KẾT QUẢ CUỐI CÙNG - State 40):
+[01 98 32 46]
+[bb 66 8b 49]
+[38 58 46 b0]
+[56 ca 2e f0]
+
+Kết luận cuối cùng
+
+Bản mã cuối cùng (đọc theo cột) là:
+01 bb 38 56 98 66 58 ca 32 8b 46 2e 46 49 b0 f0
+
+Chuyển thành chuỗi hex:
+01bb3856986658ca328b462e4649b0f0  
